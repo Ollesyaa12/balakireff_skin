@@ -1,0 +1,237 @@
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+.o-depil {
+    padding: 30px 0;
+}
+.depil-content {
+    background: #f6f3f3;
+    border-radius: 20px;
+    border: 1px solid #A5A293;
+    margin: 0 5px 0 5px;
+    padding: 30px 0;
+}
+
+.depil-title h1{
+    margin: 0 0 40px 50px;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  color: #9F927A;
+}
+
+.depil-name h2{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 350;
+    color: #574F42;
+    text-align: left;
+}
+
+.depil-name p{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #574F42;
+    text-align: left;
+}
+
+.ramka {
+    border: 3px solid #A5A293;
+    margin: 0 50px 20px 50px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.depil-line {
+    width: 100%;
+    height: 3px;
+    background: #A5A293;
+    margin: 0;
+}
+
+.depil-pap {
+    padding: 30px 0;
+}
+
+.shug p{
+    font-family: 'Inter';
+    text-align: center;
+    font-size: 30px;
+}
+
+.do-depil {
+    margin-top: 20px;
+}
+
+.do-depil ul{
+    margin: 0;
+    padding-left: 25px;
+    list-style: disc;
+}
+
+.do-depil li {
+    margin-bottom: 15px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #574F42;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.do-depil h3{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    color: #574F42;
+    margin-bottom:  15px;
+    font-weight: 400;
+}
+
+.ask {
+    background: #ECB3B3;
+    margin: 0 30px 30px 30px;
+    border-radius: 15px;
+    padding: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.ask li{
+    margin-bottom: 20px;
+}
+.ask summary {
+  font-size: 25px;
+  font-weight: 400;
+  color: #f8f8f8;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding: 20px 20px;
+  
+}
+
+.ask summary::-webkit-details-marker {
+  display: none;
+}
+
+/* СТРЕЛКА */
+.ask summary::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  color: #f8f8f8;
+  font-weight: bold;
+  transition: transform 0.3s;
+  padding-right: 20px;
+}
+
+.ask[open] summary::after {
+  content: '−';
+  padding-right: 20px;
+}
+.ask-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 0.3s ease;
+  background: #f8f8f8;
+  padding: 20px;
+}
+
+.ask-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #574F42;
+}
+                                  /*ПЛЮСЫ-МИНУСЫ*/
+.depil-pros-cons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 0 50px;
+}
+
+/* ОБЩИЕ СТИЛИ ДЛЯ ОБЕИХ КАРТОЧЕК */
+.pros-card,
+.cons-card {
+  flex: 1;
+  padding: 10px 10px;
+
+  box-sizing: border-box;
+}
+
+.pros-card {
+  background: none;
+}
+
+.cons-card {
+  background: none;
+}
+
+/* СПИСКИ (Убираем стандартные кружочки) */
+.pros-card ul,
+.cons-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ПУНКТЫ (Свои плюсы/минусы) */
+.pros-card li,
+.cons-card li {
+  position: relative;
+  padding-left: 30px;         /* Место под плюс/минус */
+  margin-bottom: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #574F42;
+  line-height: 1.5;
+}
+
+/* ПЛЮСЫ */
+.pros-card li::before {
+  content: '+';
+  position: absolute;
+  left: 0;
+  top: -2px;
+  color: #574F42;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* МИНУСЫ */
+.cons-card li::before {
+  content: '−';               /* Длинное тире, не дефис! */
+  position: absolute;
+  left: 0;
+  top: -2px;
+  color: #574F42;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* АДАПТИВНОСТЬ (На телефоне в столбик) */
+@media (max-width: 768px) {
+  .depil-pros-cons {
+    flex-direction: column;
+  }
+}
