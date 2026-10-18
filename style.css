@@ -1,0 +1,1022 @@
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ОСНОВА */
+body {
+  background: #DACEBA;
+  margin: 0;
+  padding: 20px 20px;
+  
+}
+.main-block {
+  max-width: 1860px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #F6F3F3 0%, #DACEBA 100%);
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+                        /* ШАПКА */
+
+.header {
+  top: 0;
+  left: 0;
+  
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+  position: relative;
+  margin: 20px 20px 20px 50px;
+}
+
+.nav {
+  display: flex;
+  margin-left: auto;
+  gap: 30px;
+  margin-right: 20px;
+  
+}
+
+.nav a {
+  text-decoration: none;
+  color: #574F42;
+  font-family: 'raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+}
+
+.nav a:hover {
+  color: #BDAC8F;
+}
+.nav a.active {
+  color: #BDAC8F;
+}
+
+.zapis-icon {
+  margin: 0 50px;
+  display: inline-block;
+  padding: 20px 35px;                 /* ← можно менять */
+  background: #ECB3B3;                /* ← розовый как у тебя */
+  color: #f8f8f8;
+  text-decoration: none;
+  border-radius: 15px;                /* ← скругление */
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.3s ease;
+  white-space: nowrap;                /* ← не переносится */
+}
+
+.zapis-icon:hover {
+  background: #ECB3B3;
+  transform: translateY(-3px);
+  
+}
+
+                                             /* МЭИН */
+
+/*БАННЕР*/
+
+.banner {
+  padding: 0 5px;
+}
+
+.banner-bg {
+  position: relative;
+  color: #000000;
+  height: 550px;
+  border-radius: 20px;
+  border: 1px solid #A5A293;
+  overflow: hidden;
+}
+
+.banner-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+.banner-content {
+  top: 0;                            /* ← прижать к верху */
+  left: 0;                           /* ← прижать к левому краю */
+  width: 100%;                       /* ← на всю ширину */
+  height: 100%;
+  position: absolute;              /* поверх картинки */
+  justify-content: center;      /* ← по вертикали центр */
+  align-items: flex-start;
+  padding-left: 50px;
+  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.banner-text {
+  text-align: center;
+}
+
+.banner-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 80px;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0 0 15px 0;
+  line-height: 1;
+
+  background: linear-gradient(0deg, #766957 0%, #A39574 46%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.banner-name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color:#574F42;
+  margin: 40px 0 0 0;
+}
+
+.banner-subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: normal;
+  color:#574F42;
+  margin: 10px 0 0 0;
+}
+
+.obo-mne {
+  margin: 40px 0 0 0;
+  display: inline-block;
+  padding: 20px 35px;
+  background: #ECB3B3;
+  color: #f8f8f8;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.3s ease;
+  white-space: nowrap;                /* ← не переносится */
+}
+
+.obo-mne:hover {
+  background: #ECB3B3;
+  transform: translateY(-3px);
+  
+}
+
+
+                                 /* ПОПУЛЯРНЫЕ УСЛУГИ */
+
+.services-wrap {
+  margin: 0 auto;
+  padding: 30px 5px;
+  background: #f6f3f3;
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: 1px solid #A5A293;
+}
+
+.services {
+  padding: 20px 5px;
+}
+
+.services h2 {
+  font-size: 50px;
+  text-align: left;
+  margin: 0 0 0 50px;
+  font-family: 'Raleway', sans-serif;
+  color: #9F927A;
+  line-height: 1;
+}
+
+.service-head {
+  display: flex;
+  justify-content: space-between;  /* ← заголовок слева, ссылка справа */
+  align-items: center;             /* ← по центру по вертикали */
+}
+
+.services-link {
+  font-family: 'Raleway', serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #574F42;
+  text-decoration: none;
+  margin: 0 50px 0 0;
+}
+
+.services-link:hover {
+  color: #BDAC8F;
+}
+
+.services-grid {
+  display: flex;              /* ← карточки в ряд */
+  gap: 30px;                  /* ← отступ между карточками */
+  justify-content: center;    /* ← по центру */
+  flex-wrap: wrap;
+  margin: 90px 0 0 0;
+}
+
+.service-card {
+  position: relative;
+  flex: 1;                    /* ← одинаковая ширина */
+  max-width: 300px;
+  height: 500px;
+  border-radius: 20px;
+  text-align: center;         /* ← текст по центру */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);   /* ← тень */
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  background: #A5A293;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  color: #574F42;
+  position: relative ;
+}
+
+.card-photo {
+  width: 100%;
+  height: auto;
+} 
+
+.card-name {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 0;
+  text-decoration: none;
+  background: #f8f8f8;
+  border-radius: 8px;
+  margin: 0 20px 20px 20px;
+  border: 1px solid #A5A293;
+}
+
+.service-knopka {
+  text-align: center;                /* ← центрирует кнопку */
+  margin-top: 90px;
+}
+
+.zapis-s {
+  display: inline-block;
+  padding: 30px 100px;
+  background: #ECB3B3;
+  color: #f8f8f8;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.3s ease;
+  white-space: nowrap;                /* ← не переносится */
+}
+
+.zapis-s:hover {
+  background: #ECB3B3;
+  transform: translateY(-3px);
+  
+}
+
+
+                                                       /*АКЦИИ*/
+
+.sale {
+  margin: 0 5px;
+}
+
+.sale-wrap {
+  margin: 0;
+  padding: 30px 0 140px 0;
+  background: #f6f3f3;
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: 1px solid #A5A293;
+}
+
+.sale-head {
+  display: flex;
+  align-items: center;
+}
+
+.sale-head h2 {
+  margin: 0 0 40px 50px;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  color: #9F927A;
+}
+
+/* СЕТКА (выравнивает карточки по высоте) */
+.sale-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 15000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  align-items: stretch; /* ← это заставляет все ячейки быть одной высоты */
+}
+
+/* КАРТОЧКА */
+.sale-card {
+  display: flex;
+  flex-direction: column; /* элементы внутри идут сверху вниз */
+  height: 100%; /* растягиваем на всю высоту ячейки */
+  min-height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+  background: #E9E5C7; /* белый фон для нижней части */
+  margin: 10px 10px 10px 10px;
+}
+
+.sale-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ЖЁЛТАЯ ШАПКА */
+.sale-card-top {
+  background: #E9E5C7;
+  padding: 20px;
+  text-align: center;
+}
+
+.sale-card-top h3 {
+  font-size: 25px;
+  font-family: 'Inter', sans-serif;
+  color: #574F42;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* БЕЛЫЙ БЛОК С ТЕКСТОМ */
+.sale-card-body {
+  display: flex;
+  padding: 0;
+  background: #f8f8f8;
+  flex-grow: 1; /* ← это заставляет белый блок растягиваться и заполнять пустоту */
+  text-align: center;
+  margin: 0 5px 0 5px;
+  border-radius: 15px;
+  align-items: center;                 /* центр по вертикали */
+  justify-content: center;             /* центр по горизонтали */
+}
+
+.sale-card-body p {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #574F42;
+  margin: 5px;
+  line-height: 1.5;
+}
+
+/* МЕСТО ДЛЯ КАРТИНКИ (пока пустое) */
+.sale-card-img {
+  height: 200px;             /* ← высота под фото */
+  background: #E9E5C7;       /* ← пока пусто — серый фон */
+  border-radius: 15px;       /* ← скруглённые углы */
+  margin: 20px 5px 5px 5px;          /* ← отступ от белого блока */
+  overflow: hidden;          /* ← если картинка больше — обрежется */
+}
+
+/* Если добавишь картинку внутрь */
+.sale-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* ← заполняет блок, не искажая */
+  display: block;
+}
+
+/* Чтобы на телефонах всё не сжималось в кашу */
+@media (max-width: 1024px) {
+  .sale-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .sale-grid { grid-template-columns: 1fr; }
+}
+
+                                                       /*ОБО МНЕ*/
+.about {
+  padding: 30px 0;
+  background: #f6f3f3;
+  border: 1px solid #A5A293;
+  border-radius: 20px;
+  margin: 20px 5px 5px 5px;
+}
+
+.about-wrap {
+  max-width: 1860px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+  display: flex;                     /* ← 2 колонки: текст + фото */
+  gap: 50px;
+  align-items: stretch;              /* ← фото растягивается по высоте */
+}
+
+/* ЛЕВАЯ КОЛОНКА */
+.about-left {
+  flex: 1;                           /* Занимает оставшееся место */
+  display: flex;
+  flex-direction: column;
+}
+
+/* ЗАГОЛОВОК (Имя, должность, линия) */
+.about-head {
+  margin-bottom: 30px;
+}
+
+.about-name {
+  font-size: 80px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #574F42;
+  margin: 0 0 20px 0;
+  line-height: 1;
+}
+
+.about-role {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  color: #574F42;
+  margin: 20px 0 20px 0;
+  text-transform: uppercase;
+}
+
+.about-line {
+  width: 460px;
+  height: 2px;
+  background: #A5A293;
+}
+
+/* КАРТОЧКА "ОБО МНЕ" */
+.about-card {
+  background: #A5A293;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  flex-grow: 1;                      /* Растягивается на оставшееся место */
+}
+
+.about-card h3 {
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: #f8f8f8;
+  margin: 0 0 20px 0;
+}
+
+.about-card p {
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: 'Raleway', sans-serif;
+  color: #f8f8f8;
+  margin: 0;
+}
+
+/* ПРАВАЯ КОЛОНКА: ФОТО */
+.about-photo {
+  flex: 0 0 450px;                   /* Фиксированная ширина 400px */
+  border-radius: 20px;
+  
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;                 /* Заполняет блок, не искажая */
+  display: block;
+}
+
+/* ========================================= */
+/* БЛОК "МОЙ ПОДХОД"                         */
+/* ========================================= */
+
+.about-approach-wrap {
+  max-width: 1860px;
+  margin: 60px auto 0;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.about-approach {
+  background: #A5A293;
+  border-radius: 20px;
+  padding: 50px 60px;
+  color: #f8f8f8;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.about-approach h3 {
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+  color: #f8f8f8;
+}
+
+/* СПИСОК В 2 КОЛОНКИ */
+.about-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  column-count: 2;                   /* ← 2 колонки */
+  column-gap: 50px;
+}
+
+.about-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'Raleway', sans-serif;
+  color: #f8f8f8;
+  opacity: 0.95;
+  break-inside: avoid;               /* Пункт не разрывается между колонками */
+}
+
+/* ЖИРНАЯ ТОЧКА */
+.about-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background: #f8f8f8;
+  border-radius: 50%;
+}
+
+/* ========================================= */
+/* АДАПТИВНОСТЬ                              */
+/* ========================================= */
+
+@media (max-width: 900px) {
+  .about-wrap {
+    flex-direction: column;           /* На планшете — в столбик */
+  }
+  .about-photo {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .about-name {
+    font-size: 32px;
+  }
+  .about-approach {
+    padding: 30px 25px;
+  }
+  .about-list {
+    column-count: 1;                 /* На телефоне — 1 колонка */
+  }
+}
+
+.reviews {
+  padding: 30px 0;
+  background: #f6f3f3;
+  border: 1px solid #A5A293;
+  border-radius: 20px;
+  margin: 20px 5px 5px 5px;
+}
+
+.reviews-title {
+  margin: 0 0 0 50px;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  color: #9F927A;
+}
+
+.reviews-header {
+  display: flex;                     /* Элементы в ряд */
+  justify-content: space-between;    /* Заголовок слева, плашка справа */
+  align-items: center;               /* По центру по вертикали */
+  margin-bottom: 40px;               /* Отступ до карусели */
+  flex-wrap: wrap;                   /* Если не влезут, перенесутся */
+  gap: 20px;                         /* Отступ между ними */
+}
+
+.reviews-wrap {
+  max-width: 1860px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.reviews-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0;
+  padding: 15px 25px;
+  background: #f8f8f8;
+  border: 1px solid #f8f8f8;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.reviews-badge:hover {
+  transform: translateY(-3px);
+}
+
+.reviews-badge-stars {
+  color: #E9B500;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.reviews-badge-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #574F42;
+}
+
+.reviews-carousel {
+  position: relative;              /* Чтобы стрелки стояли поверх */
+  max-width: 1200px;               /* Ограничим ширину карусели */
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+/* КОНТЕЙНЕР ДЛЯ ПРОКРУТКИ */
+.reviews-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;                /* Включаем скролл */
+  scroll-behavior: smooth;         /* Плавная прокрутка */
+  scroll-snap-type: x mandatory;
+  padding: 10px 0 20px 0;
+  
+  /* Прячем скроллбар */
+  scrollbar-width: none;
+}
+.reviews-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* КАРТОЧКА */
+.review-card {
+  flex: 0 0 300px;                 /* Ширина карточки */
+  background: #f8f8f8;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+}
+
+/* ИМЯ АВТОРА (ТЕПЕРЬ СВЕРХУ) */
+.review-author {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #9F927A;
+  margin: 0 0 5px 0;
+  text-align: left;                /* Выравниваем по левому краю */
+}
+
+/* ЗВЕЗДЫ */
+.review-stars {
+  color: #E9B500;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* ТЕКСТ */
+.review-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #574F42;
+  margin: 0;
+  flex-grow: 1;                    /* Растягиваем, чтобы карточки были одной высоты */
+}
+
+/* СТРЕЛКИ */
+.reviews-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: #ECB3B3;             /* Розовый фон */
+  color: #f8f8f8;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;                     /* Поверх карточек */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+  box-shadow: 0 4px 10px rgba(214, 51, 108, 0.3);
+}
+
+.reviews-arrow:hover {
+  background: #ECB3B3;
+}
+
+.reviews-arrow-left {
+  left: -20px;                     /* Сдвигаем влево за пределы карточек */
+}
+
+.reviews-arrow-right {
+  right: -20px;                    /* Сдвигаем вправо */
+}
+
+/* Прячем стрелки на мобилках (там свайп работает) */
+@media (max-width: 768px) {
+  .reviews-arrow {
+    display: none;
+  }
+  .reviews-wrap {
+    padding: 0 20px;
+  }
+}
+
+                                                 /*КОНТАКТЫ */
+.contacts {
+  padding: 30px 0;
+  background: #f6f3f3;
+  border: 1px solid #A5A293;
+  border-radius: 20px;
+  margin: 20px 5px 5px 5px;
+
+}
+
+.contacts-wrap {
+  max-width: 1860px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.contacts-title {
+  margin: 0 0 40px 50px;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  color: #9F927A;
+}
+
+/* СЕТКА (2 КОЛОНКИ) */
+.contacts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* Две колонки одинакового размера */
+  gap: 40px;
+  align-items: stretch;             /* Растягиваем по высоте друг друга */
+}
+
+/* ЛЕВАЯ КОЛОНКА (ИНФО) */
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background: #f8f8f8;              /* Розовый фон */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.contact-item h3 {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: #9F927A;
+  margin: 0 0 5px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-item p {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  color: #574F42;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.contact-item a {
+  color: #574F42;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  color: #ECB3B3;
+}
+
+.contact-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-socials img{
+  width: 40px;
+  height: auto;
+  padding: 10px 0;
+}
+
+.contact-socials a {
+  color: #ECB3B3;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* ПРАВАЯ КОЛОНКА (КАРТА) */
+.contacts-map {
+  border-radius: 20px;
+  overflow: hidden;                 /* Обрезает карту по углам */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  background: #f8f8f8;
+}
+
+.contacts-map iframe {
+  width: 100%;
+  height: 100%;                     /* Карта заполняет всю колонку */
+  border: none;
+  display: block;
+}
+
+/* АДАПТИВНОСТЬ (На телефоне — в столбик) */
+@media (max-width: 900px) {
+  .contacts-grid {
+    grid-template-columns: 1fr;     /* 1 колонка */
+  }
+  .contacts-wrap {
+    padding: 0 20px;
+  }
+  .contacts-map {
+    height: 400px;                  /* Высота карты на телефоне */
+  }
+}
+
+
+
+                                                      /*футер*/
+
+.footer {
+  background: #574F42;                /* ← тёмный фон */
+  color: #f8f8f8;
+  padding: 60px 0 20px;
+  margin-top: 80px;                   /* ← отступ от контента */
+}
+
+.footer-wrapper {
+  max-width: 1200px;                  /* ← ширина контента */
+  margin: 0 auto;                      /* ← по центру */
+  padding: 0 40px;                     /* ← отступы по краям */
+  box-sizing: border-box;
+}
+
+.footer-top {
+  display: flex;                       /* ← 3 колонки в ряд */
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.footer-col {
+  flex: 1;                             /* ← одинаковые колонки */
+}
+
+.footer-logo {
+  height: 100px;
+  width: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.footer-col p {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 8px 0;
+  opacity: 0.9;
+}
+
+.footer-col a {
+  display: block;                      /* ← каждая ссылка на новой строке */
+  color: #f8f8f8;
+  text-decoration: none;
+  font-size: 18px;
+  
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.footer-col a:hover {
+  opacity: 1;                          /* ← ярче при наведении */
+  color: #f8f8f8;
+}
+
+/* НИЖНЯЯ ПОЛОСА */
+
+.footer-icon-c {
+  display: flex;                       /* ← иконка и текст в ряд */
+  align-items: center;                 /* ← по центру по вертикали */
+  gap: 10px;
+  margin: 0 0 12px 0;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  border-top: 2px solid rgba(255, 255, 255, 0.15);   /* ← полоска */
+  padding-top: 30px;                                    /* ← отступ сверху */
+  margin-top: 40px;                                     /* ← отступ от контента */
+  align-items: center;  
+  justify-content: center;
+}
+
+.footer-socials {
+  display: flex;                                        /* ← соцсети в ряд */
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+.footer-socials img {
+  width: 50px;                           /* ← размер иконки */
+  height: 50px;
+  display: block;
+  opacity: 1;                            /* ← яркость 100% (было 0.7) */
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.footer-socials a:hover img {
+  transform: scale(1.15);                /* ← увеличивается при наведении */
+  opacity: 1;
+}
+
+
+.footer {
+  background: #574F42;                /* ← тёмный фон */
+  color: #f6f3f3;
+  padding: 50px 0 30px;
+  width: 100%;                         /* ← на всю ширину */
+  margin-top: 40px;
+  border-radius: 30px;
+}
+
+.footer-wrapper {
+  max-width: 1200px;                   /* ← контент внутри */
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
